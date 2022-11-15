@@ -1,10 +1,20 @@
 # Cell-cell-crosstalk-prediction
 Using pseudo-bulk RNA-seq data to predict ligand-receptor relationships between cell populations
 
+
+### How to run the program
+First step is to compile the source code to executive file by C++ compliler 
+```sh
 g++ LR_generator.cpp -o LR_generator
+```
+Before running the program, you have to prepare three files, two tables of expressed gene list for cell type 1 and 2 and one table of human ligand-receptor list.
 Usage: ./LR_generator No_of_CT1_clusters No_of_CT2_clusters CT1_table_file CT2_table_file L-R_pair_table
 
-Number of clusters for a cell type
+```sh
+./LR_generator 10 2 macrophage_UQ_10CMs.tsv neutrophil_UQ_2CMs.tsv human_LR_pairs.txt
+```
+
+### About the parameters and input files
 No_of_CT1_clusters (n): Number of clusters for cell type 1
 No_of_CT2_clusters (m): Number of clusters for cell type 2
 
