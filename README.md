@@ -11,7 +11,7 @@ Before running the program, you have to prepare three files, two tables of expre
 Usage: ./LR_generator No_of_CT1_clusters No_of_CT2_clusters CT1_table_file CT2_table_file L-R_pair_table
 
 ```sh
-./LR_generator 10 2 macrophage_UQ_10CMs.tsv neutrophil_UQ_2CMs.tsv human_LR_pairs.txt
+./LR_generator 10 2 macrophage_UQ_10CMs.tsv neutrophil_UQ_2CMs.tsv human_LR_pairs_Omnipath_curated.txt
 ```
 
 ### About the parameters and input files
